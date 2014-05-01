@@ -2,6 +2,7 @@
 // @name           Twitter Lists Box
 // @namespace      http://odyniec.net/
 // @description    Adds a box with your lists to Twitter homepage to let you access them more easily
+// @version        0.2.1
 // @include        http://twitter.com/*
 // @include        https://twitter.com/*
 // @grant          none
