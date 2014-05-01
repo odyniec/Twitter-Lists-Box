@@ -14,11 +14,11 @@ var done = false;
 function displayLists(lists) {
     if (!lists) return;
     
-    // Find the mini profile module
-    var miniProfile = document.querySelector('.module.mini-profile');
+    // Find the dashboard profile card
+    var profileCard = document.querySelector('.DashboardProfileCard.module');
     
-    // Do nothing if there's no mini profile
-    if (!miniProfile)
+    // Do nothing if there's no profile card
+    if (!profileCard)
         return;
     
     // Create a new module for the list of lists
@@ -39,8 +39,8 @@ function displayLists(lists) {
     // Get the list to append items to
     var ul = listsModule.querySelector('ul.list-of-lists'); 
     
-    // Put the lists module below the mini profile
-    miniProfile.parentNode.insertBefore(listsModule, miniProfile.nextSibling);
+    // Put the lists module below the profile card
+    profileCard.parentNode.insertBefore(listsModule, profileCard.nextSibling);
 
     // Add the lists in alphabetical order
     Object.keys(lists).sort().every(function (name) {
